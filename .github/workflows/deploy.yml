@@ -3,7 +3,7 @@ name: Deploy PRAI NeuronNet to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   deploy:
