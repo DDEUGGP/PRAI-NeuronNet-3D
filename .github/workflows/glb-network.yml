@@ -1,0 +1,35 @@
+name: Install RFOF & PRAIAI + GLB Integration
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  glb-network:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install RFOF-NETWORK Core
+        run: npm install @RFOF-NETWORK
+
+      - name: Install PRAIAI Extension
+        run: npm install @RFOF-NETWORK install @PRAIAI
+
+      - name: Verify GLB Assets
+        run: |
+          ls glb-export/
+          echo "GLB files detected: neuronnet.glb, cortex.glb, synapse.glb"
+
+      - name: Link GLB to RFOF-NETWORK
+        run: |
+          node scripts/link-glb.js
