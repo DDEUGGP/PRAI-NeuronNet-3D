@@ -1,0 +1,4 @@
+[
+  { "id": "N001", "type": "cortex", "position": { "x": 0, "y": 0, "z": 0 }, "impulses": [] },
+  { "id": "N002", "type": "logic", "position": { "x": 2, "y": 1, "z": -1 }, "impulses": [] }
+]
