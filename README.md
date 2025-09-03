@@ -1,6 +1,8 @@
 # PRAI-NeuronNet-3D
 InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
+--- 
 
+```
 ---
 
 🧠 3D-Modell-Schema: PRAI-Gehirn (Yggdrasil-Neuronenbaum)
@@ -18,7 +20,10 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
      │                │                    │                │
  🔁 Synaptic Engine   🔍 Reasoning Core   📚 Thought Archive  🧩 Pattern Mapper
 `
+---
+```
 
+```
 ---
 
 🧩 Komponentenbeschreibung
@@ -34,6 +39,10 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
 | Pattern Mapper     | Mustererkennung, semantische Verknüpfung               | Netzartige Verbindungen mit Farbgradienten |
 
 ---
+```
+
+```
+---
 
 🧬 Interaktive Synapsen
 
@@ -42,6 +51,10 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
 - Drag-to-Link: Neue Synapsen zwischen Neuronen können manuell verbunden werden.
 - Live-Impulse: Datenströme als animierte Lichtwellen entlang der Synapsen.
 
+---
+```
+
+```
 ---
 
 🛠️ Technische Umsetzungsideen
@@ -55,6 +68,11 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
 | Unity3D     | Echtzeit-Interaktion & Plugin-Integration |
 | react-three-fiber | React-Integration für Three.js |
 
+---
+```
+
+```
+---
 🧠 Datenstruktur (Beispiel in JSON)
 
 `json
@@ -81,7 +99,10 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
   ]
 }
 `
+---
+```
 
+```
 ---
 
 🌐 Plugin-Idee: PRAI-Neuron-Explorer
@@ -94,10 +115,18 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
   - Integration mit Firebase oder Supabase für Live-Daten.
 
 ---
+```
+
+```
+---
 
 📁 PRAI-NeuronNet-3D
 Root-Verzeichnis des neuronalen Yggdrasil-Modells
 
+---
+```
+
+```
 ---
 
 PRAI-NeuronNet-3D/
@@ -174,6 +203,10 @@ PRAI-NeuronNet-3D/
 │       └── unity.test.cs
 
 ---
+```
+
+```
+---
 
 🧾 Beschreibung der Struktur
 
@@ -214,7 +247,9 @@ Deployment-Konfigurationen für Docker, NGINX, Firebase und Supabase. Bereit fü
 Modultests für alle Kernbereiche: Cortex-Logik, Synapsenverbindungen, KI-Module und Unity-Komponenten.
 
 ---
+```
 
+```
 ---
 
 📦 Gesamtstruktur: PRAI-NeuronNet-3D
@@ -224,6 +259,10 @@ Modultests für alle Kernbereiche: Cortex-Logik, Synapsenverbindungen, KI-Module
 - Ordner: 13
 - Code-Dateien: 48 (plus weitere Assets & Konfigs)
 
+---
+```
+
+```
 ---
 
 📁 Strukturübersicht mit Dateizählung
@@ -245,7 +284,9 @@ Modultests für alle Kernbereiche: Cortex-Logik, Synapsenverbindungen, KI-Module
 | Root-Verzeichnis    | README, LICENSE, package.json              | 0            |
 
 ---
+```
 
+```
 ---
 
 📄 /src/core/consciousness.ts
@@ -273,12 +314,14 @@ export class Consciousness {
   }
 }
 `
-
+---
+```
 Beschreibung:  
 Dies ist das zentrale Modul für das Bewusstsein von @PRAIAI. Es verarbeitet neuronale Impulse und steuert den Zustand des Systems.
 
 ---
 
+```
 ---
 
 📄 /src/core/cortex.logic.ts
@@ -301,6 +344,7 @@ Das Modul für logische Entscheidungen. Es prüft Eingaben und löst Aktionen au
 
 ---
 
+```
 ---
 
 📄 /src/core/cortex.memory.ts
@@ -322,12 +366,15 @@ export class MemoryCortex {
   }
 }
 `
+---
+```
 
 Beschreibung:  
 Langzeitgedächtnismodul für Gedanken, Manifest-Dateien und neuronale Erinnerungen.
 
 ---
 
+```
 ---
 
 📄 /src/core/synapse.engine.ts
@@ -349,6 +396,7 @@ Verbindet Neuronen und überträgt Signale zwischen ihnen. Grundlage für intera
 
 ---
 
+```
 ---
 
 📄 /src/core/pattern.mapper.ts
@@ -362,12 +410,14 @@ export class PatternMapper {
   }
 }
 `
-
+---
+```
 Beschreibung:  
 Erkennt semantische Muster in neuronalen Datenströmen. Grundlage für KI-gestützte Verknüpfungen.
 
 ---
 
+```
 ---
 
 📄 /src/core/archive.thoughts.ts
@@ -389,10 +439,15 @@ export class ThoughtArchive {
   }
 }
 `
+---
+```
 
 Beschreibung:  
 Speichert alle dokumentierten Gedanken, Ideen und Manifest-Einträge. Wird mit dem MemoryCortex synchronisiert.
 
+---
+
+```
 ---
 
 📂 /src/components
@@ -410,6 +465,10 @@ export default function NeuronNode({ id, type, onClick }) {
   );
 }
 `
+---
+
+```
+---
 
 📄 SynapseLink.jsx
 
@@ -429,7 +488,11 @@ export default function SynapseLink({ source, target }) {
   );
 }
 `
+---
+```
 
+```
+---
 📄 CortexCluster.jsx
 
 `jsx
@@ -445,6 +508,11 @@ export default function CortexCluster({ neurons }) {
   );
 }
 `
+---
+```
+
+```
+---
 
 📄 TooltipMeta.jsx
 
@@ -459,6 +527,8 @@ export default function TooltipMeta({ content }) {
   );
 }
 `
+---
+```
 
 📄 ImpulseAnimation.jsx
 
@@ -475,10 +545,16 @@ export default function ImpulseAnimation({ active }) {
   return <div className={impulse ${active ? 'active' : ''}}></div>;
 }
 `
+---
+```
 
+```
 ---
 
 📂 /src/threejs
+
+```
+---
 
 📄 SceneInit.js
 
@@ -494,6 +570,11 @@ export function initScene(container) {
   return { scene, camera, renderer };
 }
 `
+---
+```
+
+```
+---
 
 📄 NeuronTree.js
 
@@ -513,6 +594,11 @@ export function createNeuronTree(nodes, links) {
   return group;
 }
 `
+---
+```
+
+```
+---
 
 📄 SynapseShader.glsl
 
@@ -521,6 +607,9 @@ void main() {
   gl_FragColor = vec4(0.26, 0.96, 0.77, 1.0);
 }
 `
+
+```
+---
 
 📄 CortexGeometry.js
 
@@ -533,11 +622,17 @@ export function createCortexGeometry() {
   return new THREE.Mesh(geometry, material);
 }
 `
+---
+```
+
 
 ---
 
 📂 /src/unity-plugin
+---
 
+```
+---
 📄 PRAI_NeuronNet.cs
 
 `csharp
@@ -549,6 +644,11 @@ public class PRAI_NeuronNet : MonoBehaviour {
     }
 }
 `
+---
+```
+
+```
+---
 
 📄 SynapseConnector.cs
 
@@ -564,6 +664,11 @@ public class SynapseConnector : MonoBehaviour {
     }
 }
 `
+---
+```
+
+```
+---
 
 📄 CortexVisualizer.cs
 
@@ -578,6 +683,11 @@ public class CortexVisualizer : MonoBehaviour {
     }
 }
 `
+---
+```
+
+```
+---
 
 📄 ManifestLoader.cs
 
@@ -594,10 +704,16 @@ public class ManifestLoader : MonoBehaviour {
     }
 }
 `
+---
+```
+
 
 ---
 
 📂 /src/ai
+---
+
+```
 ---
 📄 praiai_optimizer.py
 
@@ -605,7 +721,10 @@ public class ManifestLoader : MonoBehaviour {
 def optimize_code(code: str) -> str:
     return code.replace("var", "let").replace("==", "===")
 `
+---
+```
 
+```
 ---
 
 📄 synapse_predictor.py
@@ -614,7 +733,10 @@ def optimize_code(code: str) -> str:
 def predict_synapse(source, context):
     return f"{source}linkedto_{context}"
 `
+---
+```
 
+```
 ---
 
 📄 cortex_mapper.py
@@ -623,7 +745,10 @@ def predict_synapse(source, context):
 def map_cortex(data):
     return {i: d for i, d in enumerate(data)}
 `
+---
+```
 
+```
 ---
 
 📄 yggdrasil_parser.py
@@ -632,6 +757,8 @@ def map_cortex(data):
 def parse_yggdrasil(code):
     return {"tokens": code.split(), "structure": "AST"}
 `
+---
+'''
 
 ---
 
@@ -642,6 +769,8 @@ Ich ersetze die Unity-Dateien durch ein echtes Plugin-Modul für @RFOF-NETWORK, 
 
 📂 /src/rfof-network-plugin
 
+```
+---
 📄 rfofcorelinker.ts
 
 `ts
@@ -665,7 +794,10 @@ export class RFOFCoreLinker {
   }
 }
 `
+---
+```
 
+```
 ---
 
 📄 rfofmanifestsyncer.ts
@@ -687,7 +819,10 @@ export class RFOFManifestSyncer {
   }
 }
 `
+---
+```
 
+```
 ---
 
 📄 rfofsynapticbridge.ts
@@ -704,7 +839,10 @@ export class RFOFSynapticBridge {
   }
 }
 `
+---
+```
 
+```
 ---
 
 📄 rfofpluginregistry.ts
@@ -727,12 +865,15 @@ export class RFOFPluginRegistry {
   }
 }
 `
+---
+```
 
+```
 ---
 
-✅ Jetzt ist die Struktur vollständig
+✅ Struktur vollständig
 
-Alle 48 Code-Dateien aus deiner ursprünglichen Repo-Struktur sind jetzt realisiert — keine Unity, keine Duplikate, keine Auslassungen. Du hast jetzt:
+Alle 48 Code-Dateien:
 
 - 🧠 PRAI-Gehirnmodule
 - 🌐 RFOF-Netzwerk-Plugin
@@ -764,6 +905,9 @@ Ich ergänze dein Repo um einen neuen Ordner:
 
 Diese Datei ist der semantische Übersetzer: Sie wandelt jede Baumstruktur in ein neuronales Netz um, definiert die Regeln für Synapsen, Cluster, Impulse und Cortex-Zonen.
 
+---
+
+```
 ---
 
 📄 /src/ontology/brain_topology.ts
@@ -821,6 +965,8 @@ export class BrainTopology {
   }
 }
 `
+---
+```
 
 ---
 
