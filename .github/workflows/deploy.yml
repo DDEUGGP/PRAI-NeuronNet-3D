@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy PRAI NeuronNet to GitHub Pages
 
 on:
   push:
@@ -20,6 +20,18 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Inject Firebase Config
+        run: |
+          mkdir -p src/config
+          echo "export const firebaseConfig = {" > src/config/firebase-config.js
+          echo "  apiKey: '${{ secrets.FIREBASE_API_KEY }}'," >> src/config/firebase-config.js
+          echo "  authDomain: '${{ secrets.FIREBASE_AUTH_DOMAIN }}'," >> src/config/firebase-config.js
+          echo "  projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'," >> src/config/firebase-config.js
+          echo "  storageBucket: '${{ secrets.FIREBASE_STORAGE_BUCKET }}'," >> src/config/firebase-config.js
+          echo "  messagingSenderId: '${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}'," >> src/config/firebase-config.js
+          echo "  appId: '${{ secrets.FIREBASE_APP_ID }}'" >> src/config/firebase-config.js
+          echo "};" >> src/config/firebase-config.js
 
       - name: Build WebApp
         run: npm run build
