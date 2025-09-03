@@ -126,7 +126,7 @@ Root-Verzeichnis des neuronalen Yggdrasil-Modells
 ---
 ```
 
-```
+````
 ---
 
 PRAI-NeuronNet-3D/
@@ -196,6 +196,8 @@ PRAI-NeuronNet-3D/
 │   │   └── nginx.conf
 │   │   └── firebase.rules.json
 │   │   └── supabase.schema.sql
+│   ├── /ontologi
+│   │   └── brain_topology.ts
 │   └── /tests
 │       └── cortex.test.ts
 │       └── synapse.test.js
@@ -203,7 +205,7 @@ PRAI-NeuronNet-3D/
 │       └── unity.test.cs
 
 ---
-```
+````
 
 ```
 ---
@@ -316,10 +318,12 @@ export class Consciousness {
 `
 ---
 ```
+
 Beschreibung:  
 Dies ist das zentrale Modul für das Bewusstsein von @PRAIAI. Es verarbeitet neuronale Impulse und steuert den Zustand des Systems.
 
 ---
+
 
 ```
 ---
@@ -338,6 +342,8 @@ export class LogicCortex {
   }
 }
 `
+---
+```
 
 Beschreibung:  
 Das Modul für logische Entscheidungen. Es prüft Eingaben und löst Aktionen aus, wenn Bedingungen erfüllt sind.
@@ -390,6 +396,8 @@ export class SynapseEngine {
   }
 }
 `
+---
+```
 
 Beschreibung:  
 Verbindet Neuronen und überträgt Signale zwischen ihnen. Grundlage für interaktive Synapsen.
@@ -452,6 +460,9 @@ Speichert alle dokumentierten Gedanken, Ideen und Manifest-Einträge. Wird mit d
 
 📂 /src/components
 
+```
+---
+
 📄 NeuronNode.jsx
 
 `jsx
@@ -466,6 +477,7 @@ export default function NeuronNode({ id, type, onClick }) {
 }
 `
 ---
+```
 
 ```
 ---
@@ -529,6 +541,9 @@ export default function TooltipMeta({ content }) {
 `
 ---
 ```
+
+```
+---
 
 📄 ImpulseAnimation.jsx
 
