@@ -1,0 +1,25 @@
+📄 styles.css
+
+`css
+body {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.matrix-green {
+  animation: flicker 1.5s infinite;
+  text-align: center;
+  padding-top: 50px;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+`
+
+
