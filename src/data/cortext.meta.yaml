@@ -1,0 +1,8 @@
+cortex:
+  zones:
+    - id: logic
+      color: "#00ff00"
+      function: "decision-making"
+    - id: memory
+      color: "#00ff00"
+      function: "long-term storage"
