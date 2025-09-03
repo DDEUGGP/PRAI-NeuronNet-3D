@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PRAI Manifest",
+  "type": "object",
+  "properties": {
+    "neurons": { "type": "array" },
+    "synapses": { "type": "array" },
+    "cortex": { "type": "object" }
+  },
+  "required": ["neurons", "synapses", "cortex"]
+}
