@@ -1,6 +1,3 @@
-⚙️ .github/workflows/deploy.yml
-
-`yaml
 name: Deploy to GitHub Pages
 
 on:
@@ -11,11 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repo
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node Environment
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -26,9 +24,8 @@ jobs:
       - name: Build WebApp
         run: npm run build
 
-      - name: Deploy to gh-pages
+      - name: Deploy to GitHub Pages via @RFOF-NETWORK
         uses: peaceiris/actions-gh-pages@v3
         with:
-          githubtoken: ${{ secrets.GITHUBTOKEN }}
+          github_token: ${{ secrets.RFOF_GH_TOKEN }}
           publish_dir: ./gh-pages
-`
