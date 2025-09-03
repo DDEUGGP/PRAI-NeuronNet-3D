@@ -1,0 +1,14 @@
+from PIL import Image, ImageDraw, ImageFont
+
+# Erstelle Matrix-Codeströme
+img = Image.new('RGB', (1024, 1024), color=(0, 0, 0))
+draw = ImageDraw.Draw(img)
+
+matrix_green = (0, 255, 0)
+font = ImageFont.load_default()
+
+for y in range(0, 1024, 20):
+    for x in range(0, 1024, 40):
+        draw.text((x, y), "01", fill=matrix_green, font=font)
+
+img.save("impulse_texture.png")

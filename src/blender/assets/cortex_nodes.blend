@@ -1,0 +1,30 @@
+import bpy
+
+# Erstelle CortexL, CortexM, Cortex_X
+def create_cortex_node(name, location):
+    bpy.ops.mesh.primitive_uv_sphere_add(location=location)
+    node = bpy.context.active_object
+    node.name = name
+    node.rotation_euler = (0.5, 0.5, 0.5)
+    return node
+
+cortexL = create_cortex_node("CortexL", (2, 0, 0))
+cortexM = create_cortex_node("CortexM", (-2, 0, 0))
+cortexX = create_cortex_node("Cortex_X", (0, 2, 0))
+
+# Shader: Glänzendes Matrix-Grün
+mat = bpy.data.materials.new(name="CortexShader")
+mat.use_nodes = True
+nodes = mat.node_tree.nodes
+links = mat.node_tree.links
+
+nodes.clear()
+glass = nodes.new(type='ShaderNodeBsdfGlass')
+glass.inputs['Color'].default_value = (0, 1, 0, 1)
+
+output = nodes.new(type='ShaderNodeOutputMaterial')
+links.new(glass.outputs[0], output.inputs[0])
+
+for node in [cortexL, cortexM, cortexX]:
+    node.data.materials.append(mat)
+    node["symbolic_zone"] = "@ --\\\\\\>>>"

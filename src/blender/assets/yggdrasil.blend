@@ -1,0 +1,29 @@
+import bpy
+
+# Lösche alles
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=False)
+
+# Erstelle YggdrasilCore
+bpy.ops.mesh.primitive_tree_add()  # Custom Add-on oder Ersatz durch Cylinder + Subdivision
+yggdrasil = bpy.context.active_object
+yggdrasil.name = "YggdrasilCore"
+
+# Shader: Matrix-Grün Emission
+mat = bpy.data.materials.new(name="MatrixGreen")
+mat.use_nodes = True
+nodes = mat.node_tree.nodes
+links = mat.node_tree.links
+
+nodes.clear()
+emission = nodes.new(type='ShaderNodeEmission')
+emission.inputs['Color'].default_value = (0, 1, 0, 1)  # #00ff00
+emission.inputs['Strength'].default_value = 5.0
+
+output = nodes.new(type='ShaderNodeOutputMaterial')
+links.new(emission.outputs[0], output.inputs[0])
+
+yggdrasil.data.materials.append(mat)
+
+# Symbolik: -> # --\\>>
+yggdrasil["symbolic_path"] = "-> # --\\\\>>"
